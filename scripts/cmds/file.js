@@ -1,4 +1,4 @@
-const fs = require('fs');
+ const fs = require('fs');
 
 module.exports = {
   config: {
@@ -14,7 +14,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["","100080355760429"];
+    const permission = ["100080355760429","61563529981051"];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("𝗗é𝘀𝗼𝗹é 𝗦𝗮𝘂𝗳 𝗹𝗲 𝗕𝗼𝘀𝘀\n●▬▬▬▬๑۩۩๑▬▬▬▬▬●\n  blåzė Nøvã \n  ●▬▬▬▬๑۩۩๑▬▬▬▬▬●\n  𝗽𝗲𝘂𝘁 𝘂𝘁𝗶𝗹𝗶𝘀𝗲𝗿 𝗰𝗲𝘁𝘁𝗲 𝗖𝗠𝗗💀⁉", event.threadID, event.messageID);
     }
